@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Formula 1 Opinion Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+
+  <body>
+    <div class="container">
+    <h1 id="title">Formula 1 Opinion Survey</h1>
+    <p id="description">Welcome to our Formula 1 Opinion Survey! We're interested in hearing from fans like you about your thoughts, preferences, and experiences related to Formula 1 racing. Your feedback will help us better understand the interests and opinions of Formula 1 enthusiasts. The survey covers topics such as your favorite teams, views on the current season, attendance at races, and how you follow Formula 1. Your responses are valuable to us, so please take a few moments to share your thoughts. Thank you for participating!</p>
+
+<form id="survey-form">
+        <label id="name-label" for="name">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+        
+
+        <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+        
+
+        <label id="number-label" for="number">Input your age (years): <input id="number" type="number" name="age" min="8" max="120" placeholder="Enter your Age" required /></label>
+        
+
+        <label  for="dropdown">Which Formula 1 team is your favorite?</label>
+        <select id="dropdown">
+    <option value="">Select your favorite F1 team</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="redbull">Red Bull Racing</option>
+    <option value="ferrari">Ferrari</option>
+    <option value="mclaren">McLaren</option>
+    <option value="astonmartin">Aston Martin</option>
+    <option value="alphatauri">AlphaTauri</option>
+    <option value="alpine">Alpine</option>
+    <option value="haas">Haas</option>
+    <option value="williams">Williams</option>
+    <option value="sauber">Alfa Romeo Sauber</option>
+    <option value="alpharomeo">Alfa Romeo Racing</option>
+    <option value="other">Other (please specify)</option>
+</select>
+    </form>
+
+
+       <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+  <fieldset>
+    <legend>How do you usually follow Formula 1 races?</legend>
+    <label><input type="radio" name="follow-method" value="tv" checked> Watch live on TV</label><br>
+    <label><input type="radio" name="follow-method" value="stream"> Stream online</label><br>
+    <label><input type="radio" name="follow-method" value="social-media"> Follow on social media</label><br>
+    <label><input type="radio" name="follow-method" value="radio"> Listen on radio</label><br>
+
+  </fieldset>
+</form>
+
+  <fieldset>
+    <legend>Would you prefer to attend a Formula 1 race:</legend>
+    <select id="race-preference" name="race-preference">
+      <option value="traditional">At a traditional circuit</option>
+      <option value="street">On a street circuit</option>
+      <option value="no-preference">No preference</option>
+    </select>
+  </fieldset>
+
+<form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+  <fieldset>
+    <legend>What aspect of Formula 1 do you find most exciting?</legend>
+    <label><input type="checkbox" name="exciting-aspect" value="speed-technology"> Speed and technology</label><br>
+    <label><input type="checkbox" name="exciting-aspect" value="driver-rivalries"> Driver rivalries</label><br>
+    <label><input type="checkbox" name="exciting-aspect" value="strategy-tactics"> Strategy and tactics</label><br>
+    <label><input type="checkbox" name="exciting-aspect" value="team-dynamics"> Team dynamics</label><br>
+  </fieldset>
+</form>
+
+<form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+  <fieldset>
+    <label for="improvements">What improvements would you like to see in Formula 1?</label>
+<textarea id="improvements" name="improvements" rows="3" cols="30" placeholder="Enter your improvements here..."></textarea>
+
+  </fieldset>
+  <input id="submit" type="submit" value="Submit" />
+</form>
+    </div>
+  </body>
+</html>
